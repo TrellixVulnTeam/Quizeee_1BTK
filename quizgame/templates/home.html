@@ -1,0 +1,24 @@
+ {% load static %}
+ <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <title>Quizeee</title>
+    <link rel = "icon" href =
+"{% static 'photo/icon.png' %}"
+        type = "image/x-icon">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+  </head>
+  <body>
+    <section>
+      <h1>Quick Quiz</h1>
+    </section>
+    <section>
+      <div class="quizbutton" id="quizbut">
+      <a class="quiz" href="index.html">  <button type="submit" name="quizpage">Go For Quiz</button></a><br>
+        <a  href="hspage.html"><button class="hs" type="highscore" name="check">Highscore!</button></a>
+      </div>
+    </section>
+  </body>
+</html>

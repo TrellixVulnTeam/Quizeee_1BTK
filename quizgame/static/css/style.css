@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@600&display=swap');
+body{
+  background-image: url(https://cdn.wallpapersafari.com/47/33/Wb06Ol.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  width: 100%;
+}
+.question{
+ font-family: 'Yanone Kaffeesatz', sans-serif;
+  margin: 1rem;
+}
+section.blocks
+{
+  height:auto;
+  width:600px;
+  padding:1rem;
+margin-left: 5rem;
+margin-right: auto;
+  margin-top: 2rem;
+  background-color: #eff21b;
+  border: 2px solid black;
+  border-radius: 5px;
+  display:inline-block;
+}
+#btn{
+  height:auto;
+  width:75px;
+  background-color:#0c78f2;
+  color:white;
+  border: 2px solid #f2f2f2;
+  float: right;
+  padding-top: 5px;
+  margin-bottom: 2px;
+  margin-right: 10px;
+  outline: none;
+  cursor: pointer;
+}
+button:hover{
+  opacity: 0.5;
+}
+.blocks .question
+{
+ font-family: 'Yanone Kaffeesatz', sans-serif;
+ font-size: 24px;
+ margin: none;
+}
+.choices:hover{
+cursor: pointer;
+box-shadow: 0 0.4rem 1.4rem 0 rgba(0, 255, 174,0.5);
+transform: translateY(-0.1rem);
+transition: transform 150ms;
+}
+.choices{
+  display: flex;
+    margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  width:100%;
+  height:auto;
+  border: 0.1rem solid rgba(201, 124, 242,0.25);
+  background:#f2f2f2;
+  border-radius: 20px;
+ transition: 150ms;
+}
+.op-pre{
+padding: 1.5rem 2.5rem;
+  background-color: #00ffae;
+  color:#f2f2f2;
+  height: auto;
+  width: 10%;
+  text-align: center;
+  border-radius:50%;
+}
+.op-text{
+  padding:1.5rem 1.5rem 1.5rem 1.5rem;
+  width:100%;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+.correct{
+background-color: #22bb33;
+}
+.incorrect{
+background-color: #bb2124;
+}
+.hud{
+  justify-content: space-between;
+  color: #ff0f0f;
+}
+.hud-item{
+text-align: center;
+}
+/*LOADER*/
+#loader{
+  border:  1.6rem solid white;
+border-radius: 50%;
+width: 12rem;
+border-top: 1.6rem solid #56a5eb;
+height: 12rem;
+animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0%{
+    transform: rotate(0deg);
+  }
+
+  100%{
+    transform: rotate(360deg);
+  }
+}
