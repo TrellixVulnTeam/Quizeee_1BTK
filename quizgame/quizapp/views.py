@@ -19,7 +19,6 @@ def savehighScore(request):
         post.name = request.POST.get('username')
         post.score = request.POST['score']
         post.save()
-        messages.info(request, 'Your password has been changed successfully!')
         return HttpResponseRedirect("home.html")
     else:
         return render(request,"end.html")

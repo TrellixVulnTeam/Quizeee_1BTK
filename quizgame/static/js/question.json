@@ -1,52 +1,84 @@
 [
  {
     "question": "What is a correct syntax to output \"Hello World\" in C++?",
-    "choice1": "cout<<\"Hello World\";",
-    "choice2": "System.out.Println(\"Hello World\");",
-    "choice3": "printf(\"Hello World\")",
-    "choice4": "print(\"Hello World\")",
+    "choices1": "cout<<\"Hello World\";",
+    "choices2": "System.out.Println(\"Hello World\");",
+    "choices3": "printf(\"Hello World\")",
+    "choices4": "print(\"Hello World\")",
     "Answer": 1
   },
   {
     "question": "Choose the pure virtual function definition from the following.",
-    "choice1" : " virtual void f()=0 { }",
-    "choice2" : " void virtual f()=0 { }",
-    "choice3" : "virtual void f() {} = 0;",
-    "choice4" : " None of the above.",
+    "choices1" : " virtual void f()=0 { }",
+    "choices2" : " void virtual f()=0 { }",
+    "choices3" : "virtual void f() {} = 0;",
+    "choices4" : " None of the above.",
     "Answer" : 4
   },
 
   {
     "question": "Choose the Object oriented programming language from below.",
-    "choice1" : "C++",
-    "choice2" : "small talk",
-    "choice3" : "simula",
-    "choice4" : "all of the above",
+    "choices1" : "C++",
+    "choices2" : "small talk",
+    "choices3" : "simula",
+    "choices4" : "all of the above",
     "Answer" : 4
   },
   {
     "question": "Which feature of the OOPS gives the concept of reusability?",
-    "choice1" : "Abstraction",
-    "choice2" : "Encapsulation",
-    "choice3" : "Inheritance",
-    "choice4" : "None of the above.",
+    "choices1" : "Abstraction",
+    "choices2" : "Encapsulation",
+    "choices3" : "Inheritance",
+    "choices4" : "None of the above.",
     "Answer" : 3
   },
   {
     "question": "With respective to streams >> (operator) is called as",
-    "choice1" : "Insertion operator",
-    "choice2" : "Extraction operator",
-    "choice3" : "Right shift operator",
-    "choice4" : "Left shift operator",
+    "choices1" : "Insertion operator",
+    "choices2" : "Extraction operator",
+    "choices3" : "Right shift operator",
+    "choices4" : "Left shift operator",
     "Answer" : 2
   },
   {
     "question": "Following is the invalid inclusion of a file to the current program. Identify it",
-    "choice1" : "#include <file>",
-    "choice2" : "#include \"file\"",
-    "choice3" : "#include < file",
-    "choice4" : " All of the above are invalid",
+    "choices1" : "#include <file>",
+    "choices2" : "#include \"file\"",
+    "choices3" : "#include < file",
+    "choices4" : " All of the above are invalid",
     "Answer" : 3
-  }
+  },
+    {
+    "question": "How many keywords in C++?",
+    "choices1" : "34",
+    "choices2" : "32",
+    "choices3" : "64",
+    "choices4" : "128",
+    "Answer" : 2
+  },
 
+    {
+    "question": "What is the syntax of overloading operator + for class A?",
+    "choices1" : "A operator+(argument_list){}",
+    "choices2" : "A operator[+](argument_list){}",
+    "choices3" : "int +(argument_list){}",
+    "choices4" : "int [+](argument_list){}",
+    "Answer" : 1
+    },
+  {
+    "question": " How many approaches are used for operator overloading?",
+    "choices1" : "1",
+    "choices2" : "2",
+    "choices3" : "3",
+    "choices4" : "4",
+    "Answer" : 3
+    },
+  {
+    "question": "Which of the following statement is not true about preprocessor directives?\n",
+    "choices1" : "These are lines read and processed by the preprocessor\n",
+    "choices2" : "They do not produce any code by themselves",
+    "choices3" : "These must be written on their own line",
+    "choices4" : "They end with a semicolon",
+    "Answer" : 4
+    }
 ]

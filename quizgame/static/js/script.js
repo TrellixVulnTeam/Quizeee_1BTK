@@ -5,8 +5,6 @@ let acceptingans=true;
 let score=0;
 let questioncount=0;
 let Questionpoints=10;
-const loader=document.getElementById("loader");
-const game=document.getElementById("quiz");
 const questioncountertext=document.getElementById('questioncounter');
 const ScoreText=document.getElementById('score')
 let availableques=[];
@@ -25,37 +23,36 @@ fetch("/static/js/question.json")
 .catch(err =>{
   console.error(err);
 });
-/*fetch("https://opentdb.com/api.php?amount=10&category=18&difficulty=hard&type=multiple")
+/*fetch("https://opentdb.com/api.php?amount=10&difficulty=easy&type=multiple")
 .then(res=>{
   return res.json();
 })
 .then(loadedquestion =>{
   console.log(loadedquestion.results);
-  loadedquestion.results.map(loadedquestion =>{
+  questions=loadedquestion.results.map(loadedquestion =>{
     const formatques={
       question : loadedquestion.question
     };
 const answerchoices=[...loadedquestion.incorrect_answers];
-formatques.answer= Math.floor(Math.random()*3)+1;
+formatques.answer= Math.floor(Math.random()*10)+1;
 answerchoices.splice(formatques.answer -1 ,
   0,
   loadedquestion.correct_answer
   );
-  
 
-  answerchoices.forEach((choices,index)=>{
+
+  answerchoices.forEach((choice,index)=>{
 formatques["choices"+ (index+1)] = choice;
   });
 
   return formatques;
 
 });
-
   startGame();
 })
-.catch(err =>{
-  console.error(err);
-});*/
+ .catch(err => {
+    console.error(err);
+  });*/
 
 
 const correctbonus=10;
@@ -72,14 +69,14 @@ getnewques= (MAX_QUESTIONS) =>{
     return window.location.assign('/end.html');
   }
   questioncount++;
-  questioncountertext.innerText=questioncount+'/'+ 6;
+  questioncountertext.innerText=questioncount+'/'+ 10;
 const quesindex= Math.floor(Math.random() *availableques.length);
 currentquestion=availableques[quesindex];
 question.innerText=currentquestion.question;
 
 choices.forEach(choice => {
   const number =choice.dataset["number"];
-  choice.innerText= currentquestion["choice"+ number];
+  choice.innerText= currentquestion["choices"+ number];
 });
 
 availableques.splice(quesindex,1);
