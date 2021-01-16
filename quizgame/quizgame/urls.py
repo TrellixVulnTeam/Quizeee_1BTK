@@ -25,10 +25,13 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',homepage),
 path('index.html',quizpage),
+path('index.html/end.html',quizpage),
 path('end.html/',savehighScore,name='savehighScore'),
 path('end.html/home.html',homepage,name='return_to_home'),
 path('hspage.html/',HSpage,name='Go_To_Highscore'),
 path('end.html/hspage.html',HSpage,name='Go_To_Highscore'),
-path('/end.html/hspage.html?Homepage=',homepage,name='return_to_home'),
+path('hspage.html/home.html',homepage,name='return_to_home'),
+path('hspage.html/index.html',quizpage),
+path('hspage.html/hspage.html',HSpage),
 path('end.html/index.html',quizpage,name='Quiz')
 ]
