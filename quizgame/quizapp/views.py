@@ -12,7 +12,7 @@ def HSpage(request):
     print("Myoutput", stud)
     return render(request, "hspage.html",{'stu':stud})
 def savehighScore(request):
-    #delete_everything()
+#    delete_everything()
     if request.method == 'POST':
         #if request.POST.get('username') or request.POST.get('score'):#check...
         post = scores()
@@ -22,5 +22,5 @@ def savehighScore(request):
         return HttpResponseRedirect("home.html")
     else:
         return render(request,"end.html")
-def delete_everything():
-    scores.objects.all().delete()
+#def delete_everything():
+#    scores.objects.get(id=60).delete()
